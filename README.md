@@ -18,8 +18,11 @@ Solutions to the Week 4 (Memory) programming exercises for **CS105**, implemente
 cs105-week-4/
 ├── volume/
 ├── filter-less/
+├── filter-more/
 └── recover/
 ```
+
+**Submitted Filter version:** `filter-less` (`filter-more` is included as extra practice).
 
 ## Compiling and Running
 
@@ -44,6 +47,18 @@ make filter
 ./filter -r images/yard.bmp reflected.bmp
 ./filter -b images/yard.bmp blurred.bmp
 ./filter -s images/yard.bmp sepia.bmp
+```
+
+### Filter (More)
+
+Applies grayscale, reflection, blur, or Sobel edge-detection filters to a BMP image.
+
+```bash
+make filter
+./filter -g images/yard.bmp gray.bmp
+./filter -r images/yard.bmp reflected.bmp
+./filter -b images/yard.bmp blurred.bmp
+./filter -e images/yard.bmp edges.bmp
 ```
 
 ### Recover
